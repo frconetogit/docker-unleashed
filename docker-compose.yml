@@ -1,0 +1,16 @@
+version: '2.0'
+services:
+   web:
+     image: oficina-docker:aula2-volumes
+     restart: always
+     container_name: aula_2
+     ports:
+      - 80:80
+     volumes:
+      - aula2-logs:/tmp
+
+volumes: 
+  conf:
+  data:
+  aula2-logs:
+
